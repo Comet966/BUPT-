@@ -6,5 +6,5 @@
 
 ### 导入引脚配置的方法
 顶部工具栏中找到 Assignments >> Import Assignments >>选中Debouncer.cvs文件 >>OK  
-![导入引脚配置](./import_assignments.png)  
+![导入引脚配置](./images/import_assignments.png)  
 
