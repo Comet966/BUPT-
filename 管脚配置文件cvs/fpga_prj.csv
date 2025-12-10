@@ -1,0 +1,57 @@
+# Copyright (C) 2025  Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus Prime License Agreement,
+# the Altera IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Altera and sold by Altera or its authorized distributors.  Please
+# refer to the Altera Software License Subscription Agreements 
+# on the Quartus Prime software download page.
+
+# Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+# File: C:\Users\Comet\Desktop\fpga_prj.csv
+# Generated on: Sun Sep 28 12:31:19 2025
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus Prime software.
+
+To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair,Strict Preservation
+clk,Input,PIN_J5,2,B2_N0,PIN_J5,3.3-V LVTTL,,,,,
+led[7],Output,PIN_K11,5,B5_N0,PIN_K11,3.3-V LVTTL,,,,,
+led[6],Output,PIN_L11,5,B5_N0,PIN_L11,3.3-V LVCMOS,,,,,
+led[5],Output,PIN_K12,5,B5_N0,PIN_K12,3.3-V LVTTL,,,,,
+led[4],Output,PIN_L15,5,B5_N0,PIN_L15,3.3-V LVTTL,,,,,
+led[3],Output,PIN_M12,5,B5_N0,PIN_M12,3.3-V LVTTL,,,,,
+led[2],Output,PIN_M14,5,B5_N0,PIN_M14,3.3-V LVTTL,,,,,
+led[1],Output,PIN_N14,5,B5_N0,PIN_N14,3.3-V LVTTL,,,,,
+led[0],Output,PIN_N15,5,B5_N0,PIN_N15,3.3-V LVTTL,,,,,
+seg1[8],Output,PIN_E2,1A,B1_N0,PIN_E2,3.3-V LVTTL,,,,,
+seg1[7],Output,PIN_L1,1B,B1_N0,PIN_L1,3.3-V LVTTL,,,,,
+seg1[6],Output,PIN_G5,1A,B1_N0,PIN_G5,3.3-V LVTTL,,,,,
+seg1[5],Output,PIN_F5,1A,B1_N0,PIN_F5,3.3-V LVTTL,,,,,
+seg1[4],Output,PIN_G2,1B,B1_N0,PIN_G2,3.3-V LVTTL,,,,,
+seg1[3],Output,PIN_J2,1B,B1_N0,PIN_J2,3.3-V LVTTL,,,,,
+seg1[2],Output,PIN_K2,1B,B1_N0,PIN_K2,3.3-V LVTTL,,,,,
+seg1[1],Output,PIN_D2,1A,B1_N0,PIN_D2,3.3-V LVTTL,,,,,
+seg1[0],Output,PIN_E1,1A,B1_N0,PIN_E1,3.3-V LVTTL,,,,,
+seg2[8],Output,PIN_B1,1A,B1_N0,PIN_B1,3.3-V LVTTL,,,,,
+seg2[7],Output,PIN_R2,2,B2_N0,PIN_R2,3.3-V LVTTL,,,,,
+seg2[6],Output,PIN_C2,1A,B1_N0,PIN_C2,3.3-V LVTTL,,,,,
+seg2[5],Output,PIN_C1,1A,B1_N0,PIN_C1,3.3-V LVTTL,,,,,
+seg2[4],Output,PIN_N1,2,B2_N0,PIN_N1,3.3-V LVTTL,,,,,
+seg2[3],Output,PIN_P1,2,B2_N0,PIN_P1,3.3-V LVTTL,,,,,
+seg2[2],Output,PIN_P2,2,B2_N0,PIN_P2,3.3-V LVTTL,,,,,
+seg2[1],Output,PIN_A2,8,B8_N0,PIN_A2,3.3-V LVTTL,,,,,
+seg2[0],Output,PIN_A3,8,B8_N0,PIN_A3,3.3-V LVTTL,,,,,
+key[3],Unknown,PIN_J14,5,B5_N0,,3.3-V LVTTL,,,,,
+key[2],Unknown,PIN_J11,5,B5_N0,,3.3-V LVTTL,,,,,
+key[1],Unknown,PIN_K14,5,B5_N0,,3.3 V Schmitt Trigger,,,,,
+key[0],Unknown,PIN_J9,5,B5_N0,,3.3 V Schmitt Trigger,,,,,
+sw[0],Unknown,PIN_J12,6,B6_N0,,,,,,,
+sw[1],Unknown,PIN_H11,6,B6_N0,,,,,,,
+sw[2],Unknown,PIN_H12,6,B6_N0,,,,,,,
+sw[3],Unknown,PIN_H13,6,B6_N0,,,,,,,
