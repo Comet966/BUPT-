@@ -1,0 +1,1 @@
+﻿module fpga_prj2(led);output [7:0] led;reg [7:0] led_value;assign led = led_value;initial beginled_value = ~8'b0000_0001;endendmodule
