@@ -1,0 +1,1 @@
+﻿//四位移位寄存器module fpga_prj(D_in,clk,D_out);input D_in,clk;output [3:0] D_out;reg [3:0] num;assign D_out = num ;always@(posedge clk)beginnum <= num >> 1;num[0] <= D_in;endendmodule

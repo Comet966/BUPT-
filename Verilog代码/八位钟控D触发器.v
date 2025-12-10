@@ -1,0 +1,1 @@
+﻿//八位钟控D触发器(EN失能)module fpga_prj(D_in,clk,D_out,EN);input [7:0] D_in;input EN;input clk;output [7:0] D_out;reg [7:0] num;always@(posedge clk)beginnum <= D_in;endassign D_out = (EN == 1'b0 )? num : 8'hzzzz_zzzz;endmodule
