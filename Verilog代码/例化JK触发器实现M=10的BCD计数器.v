@@ -1,1 +1,32 @@
-﻿//例化JK触发器实现M=10的BCD计数器module jk_ff(j_in,k_in,clk,q,q_bar);input j_in,k_in,clk;output q,q_bar;reg q_value;reg q_bar_value;assign q = q_value;assign q_bar = ~q_value;always@(posedge clk)beginq_value <= (j_in &&~q_value)||(~k_in &&q_value);endendmodulemodule fpga_prj(clk,q3,q2,q1,q0);input clk;output q3,q2,q1,q0;wire q3_bar,q2_bar,q1_bar,q0_bar;jk_ff jk_3( .j_in(q0 && q1 && q2), .k_in(q1 || q2) , .clk(clk) , .q(q3) , .q_bar(q3_bar));jk_ff jk_2( .j_in(q0 && q1  ) , .k_in(q1 && ( q3||q2_bar ) ), .clk(clk) , .q(q2) , .q_bar(q2_bar));jk_ff jk_1( .j_in(q3_bar && q0) , .k_in(q0 ) , .clk(clk) , .q(q1) , .q_bar(q1_bar));jk_ff jk_0( .j_in( 1'b1 ) , .k_in( 1'b1 ) , .clk(clk) , .q(q0) , .q_bar(q0_bar));endmodule
+﻿//例化JK触发器实现M=10的BCD计数器
+
+module jk_ff(j_in,k_in,clk,q,q_bar);
+input j_in,k_in,clk;
+output q,q_bar;
+reg q_value;
+reg q_bar_value;
+
+assign q = q_value;
+assign q_bar = ~q_value;
+
+always@(posedge clk)begin
+
+q_value <= (j_in &&~q_value)||(~k_in &&q_value);
+
+end
+
+endmodule
+
+
+module fpga_prj(clk,q3,q2,q1,q0);
+input clk;
+output q3,q2,q1,q0;
+
+wire q3_bar,q2_bar,q1_bar,q0_bar;
+
+jk_ff jk_3( .j_in(q0 && q1 && q2), .k_in(q1 || q2) , .clk(clk) , .q(q3) , .q_bar(q3_bar));
+jk_ff jk_2( .j_in(q0 && q1  ) , .k_in(q1 && ( q3||q2_bar ) ), .clk(clk) , .q(q2) , .q_bar(q2_bar));
+jk_ff jk_1( .j_in(q3_bar && q0) , .k_in(q0 ) , .clk(clk) , .q(q1) , .q_bar(q1_bar));
+jk_ff jk_0( .j_in( 1'b1 ) , .k_in( 1'b1 ) , .clk(clk) , .q(q0) , .q_bar(q0_bar));
+
+endmodule
