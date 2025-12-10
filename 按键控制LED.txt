@@ -1,0 +1,1 @@
+﻿module fpga_prj(sw,key,led);input [3:0] sw;input [3:0] key;output [7:0] led;assign led={sw,key};endmodule
